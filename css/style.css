@@ -26,7 +26,33 @@ a:hover{
     align-items: left;
     justify-content: space-between;
     padding: 10px 20px;
+    /* flex-wrap: wrap; */
 }
+.navbar-brand img {
+    width: 80px;
+    height: 80px;
+}
+.navbar-brand h1 {
+    font-size: 24px;
+    color: #0B5369;
+}
+.navbar .nav-link {
+    font-size: 18px;
+    color: #333;
+}
+.navbar .nav-link:hover {
+    color: #0B5369;
+}
+
+/* .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border: none;
+} */
 .container h1{
     color: #0B5369;
     padding-left: 10px;
@@ -90,9 +116,9 @@ footer{
     width: 100%;
     margin-top:100px;
 }
-.navbar-brand{
+/* .navbar-brand{
     font-weight: 600px;
-}
+} */
 
 img{
     margin-top: 10px;
@@ -125,6 +151,7 @@ img{
 @media (max-width: 480px) {
     .navbar {
         font-size: 14px;
+        /* padding: 5px; */
         
     }
     .card {
