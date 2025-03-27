@@ -148,20 +148,34 @@ footer{
     text-align: center;
     height: 30px;
 }
-@media (max-width: 480px) {
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #0B5369 !important; /* Set background for dropdown */
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .navbar-nav {
+        background-color: #0B5369 !important; /* Ensures nav items also have color */
+        border-radius: 5px;
+    }
+
+    .navbar-nav .nav-item {
+        padding: 5px;
+    }
+
+    .navbar-nav .nav-link {
+        color: white !important; /* Ensures text is visible */
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: #c6f8ff !important;
+        color: black !important;
+    }
+}
+
+@media (max-width: 768px) {
     .navbar {
-        font-size: 14px;
-        background-color: #0B5369;
-        gap: 10px;
-    }
-    .card {
-        width: 50%;
-        height: auto;
-    }
-    footer {
-        margin-top: 20px;
-    }
-    .dropdown-menu{
-        background-color: #0B5369;
+        background-color: #0B5369 !important; /* Set a fixed background color */
     }
 }
