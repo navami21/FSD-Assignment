@@ -1,0 +1,127 @@
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.about-section {
+    border-radius: 8px;
+    background: linear-gradient(to right, #0B5369 20%, #c6f8ff 100%);
+    padding: 40px;
+    margin: auto;
+    max-width: 100%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+    color: black;
+    
+}
+
+.about-section h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+    
+}
+
+.about-section p {
+    color:black;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+.list-item{
+    text-align: left;
+}
+
+ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    margin: 0;
+}
+
+li {
+    margin: 5px 0;  
+}
+p, li, h1, h2, h3 {
+    font-weight: 600; 
+}
+.team-item {
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.team-item h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #0B5369;
+    width: 100%;
+    margin-bottom: 20px;
+}
+h2{
+    text-align: left;
+}
+.social-icons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px; 
+    color: #0B5369;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+    background-color: #0B5369;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 20px;
+    }
+
+    .team-item {
+        flex-direction: column;
+    }
+
+    .about-section h1 {
+        font-size: 28px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+    }
+}
+footer{
+    text-align: center;
+    height: 30px;
+}
+.dropdown-menu {
+    background-color: #0B5369; 
+    border: none; 
+    padding: 10px;
+    min-width: 150px; 
+}
+.dropdown-menu a{
+    background-color:#0B5369;
+    color: white;
+    text-decoration: none;
+}
+.dropdown-menu a:hover{
+    background-color: #c6f8ff;
+}

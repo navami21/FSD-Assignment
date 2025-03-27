@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideshow 12s infinite;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes slideshow {
+    0% { background-image: url('../images/bg1.jpg'); }
+    33% { background-image: url('../images/bg2.jpeg'); }
+    66% { background-image: url('../images/bg3.jpg'); }
+    100% { background-image: url('../images/bg7.jpg'); }
+}
+
+.navbar {
+    height: 80px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navbar-brand img {
+    width: 80px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+.dropdown-menu a {
+    background-color: #0B5369;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #c6f8ff;
+}
+
+.btn {
+    background-color: #0B5369;
+    color: azure;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    background-color: #c6f8ff;
+}
+
+.signup-section {
+    background: linear-gradient(to left, #0B5369 20%, #c6f8ff 100%);
+    margin: 30px auto;
+    border-radius: 8px;
+    padding: 20px;
+    width: 50%;
+    max-width: 500px;
+    font-weight: 600;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    box-shadow: 0px 6px 9px black;
+}
+
+.signup-section h3 {
+    text-align: center;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+input[type="date"] {
+    width: 100%;
+    max-width: 400px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+input[type="date"] {
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    width: 100%;
+    max-width: 400px; 
+    min-width: 250px; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+
+.form-label {
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    height: 40px;
+    background-color: #0B5369;
+    color: rgb(7, 7, 7);
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; 
+}
+
+
+@media (max-width: 768px) {
+    .signup-section {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .navbar {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    input[type="date"] {
+        max-width: 100%;
+    }
+
+    .col-12 .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-section {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .navbar-brand img {
+        width: 60px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .col-12 .btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    input[type="date"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,115 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.signin-section {
+    background: linear-gradient(to left, #0B5369 20%, #c6f8ff 100%);
+    margin: 30px auto;
+    border-radius: 2%;
+    padding: 20px;
+    width: 50%;
+    max-width: 500px; 
+    height: 400px;
+    font-weight: 600;
+    animation: fadeIn 1.5s ease-in-out;
+    box-shadow: 0px 6px 9px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px
+}
+
+.signin-section form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin-section h3 {
+    text-align: center;
+    color: white;
+}
+.signin-section h6{
+    text-align: center;
+    padding-top: 10px;
+}
+.signin-section a{
+    color: #c6f8ff;
+    text-decoration: none;
+}
+.signin-section
+.form-label {
+    font-weight: 600;
+    text-align: center;
+}
+
+input[type="email"], 
+input[type="password"] {
+    width: 100%;
+    max-width: 400px; 
+    font-weight: 600;
+
+}
+
+.col-12 .btn {
+    margin: 20px auto 0; 
+    display: block;
+    width: 150px;
+}
+footer {
+    text-align: center;
+    height: 40px;
+    background-color: #0B5369;
+    color: rgb(15, 15, 15);
+    padding: 10px 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .signin-section {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+    input[type="email"], input[type="password"] {
+        max-width: 100%;
+    }
+    .col-12 .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .signin-section {
+        width: 90%;
+        margin-top: 50px;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    .col-12 .btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-nav.ms-auto {
+        margin-top: 10px;
+    }
+}
